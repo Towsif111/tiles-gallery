@@ -1,154 +1,83 @@
 # TilesGallery
 
-A modern tiles gallery built with Next.js and Better Auth. Browse curated tiles, view details, and manage your profile with email/password and Google sign-in.
+## Overview
+TilesGallery is a modern Next.js gallery app for browsing curated tiles, viewing details, and managing a profile with Better Auth.
 
-## UI Requirements
+## Live Demo
+[View Project](https://assignment-8-sigma-self.vercel.app)
 
-### 1) Layout & Navigation
-
-- Header (Navbar)
-  - Left: Website logo (navigates to Home).
-  - Center: Links for Home, All Tiles, and My Profile.
-  - Right:
-    - If logged out: a Login button.
-    - If logged in: a link to User Profile and a Logout button.
-- Footer
-  - Custom footer with social media links and a Contact Us section.
-
-### 2) Home Page
-
-- Banner: Large heading "Discover Your Perfect Aesthetic" with a "Browse Now" button to the All Tiles page.
-- Marquee: Scrolling line showing "New Arrivals: [Tile Name] | Weekly Feature: Modern Geometric Patterns | Join the Community..."
-- Featured Tiles: Show top 4 tiles fetched from the server, each with a "View Details" button.
-
-### 3) Authentication
-
-Where users can land on Login:
-
-- Navbar Login button (when logged out).
-- Direct route: `/login`.
-- Link from the Register page.
-- Any protected route redirect (e.g., `/my-profile` or `/tile/[id]`).
-
-User Login
-
-- Show a Login page with title and a form with fields: Email, Password, Login button.
-- On successful login: navigate to Home page.
-- On failure: show an error message (toast or inline form message).
-- Provide a link to Register.
-- Provide a Google social login button; on success navigate to Home page.
-
-User Registration
-
-- Show a Register page with title and a form with fields: Name, Email, Photo URL (link), Password, Register button.
-- On successful registration: navigate to Login page.
-- On failure: show an error message (toast or inline form message).
-- Provide a link to Login.
-- Provide a Google social login button; on success navigate to Home page.
-
-Note: Do not implement email verification or forget password in this submission.
-
-### 4) All Tiles Page (The Gallery)
-
-- Search bar: Large Hero UI input at the top to search tiles by title.
-- Tile cards display: thumbnail, title, and a Details button that navigates to Tile Details.
-
-### 5) Single Tile Details Page
-
-- Layout: Large high-res preview on the left and text/details on the right.
-- Info: Title, Creator, Style Description, Tags (e.g., "Minimalist", "Blue").
-
-## Technical Requirements
-
-- Framework: Next.js (App Router).
-- UI Library: DaisyUI/HeroUI or any comfortable UI library.
-- Authentication: Better Auth (MongoDB adapter).
-
-## Other Requirements
-
-- Show a loader while data is fetching.
-- Implement a Not Found page.
-- Implement a proxy on login or registration.
-
-## Challenge Requirements
-
-1) My Profile
-
-- Create a My Profile page to show logged-in user data.
-- Add an update feature for name and image URL.
-
-2) Update Information Feature
-
-- In `/my-profile`, include an Update button.
-- On click, route to a new page with a form containing two inputs: Image URL and Name.
-- Provide an Update Information button.
-- Follow Better Auth docs: https://better-auth.com/docs/concepts/users-accounts#update-user
-
-3) Library Integration
-
-- Implement one of: Animate.css, React-Spring, SwiperJS (React).
-
-## Route Permissions Summary
-
-- Public: `/`, `/all-tiles`, `/login`, `/register`.
-- Private: `/tile/[id]`, `/my-profile`.
-
-## Tech Stack
-
-- Next.js (App Router)
+## Technologies Used
+- Next.js
 - React
-- Better Auth + MongoDB adapter
-- Tailwind CSS + HeroUI
+- Better Auth
+- MongoDB
+- Tailwind CSS
+- HeroUI
 
-## Getting Started
+## Features
+- Responsive gallery layout
+- Authentication with login and register flows
+- Protected profile and tile detail routes
+- Searchable tile listing
+- Profile update support
 
-Install dependencies:
+## Dependencies
+- next
+- react
+- react-dom
+- better-auth
+- @better-auth/mongo-adapter
+- mongodb
+- @heroui/react
+- animate.css
+- react-fast-marquee
 
-```bash
-npm install
-```
+## Screenshot
+![Project Screenshot](src/screenshot/Screenshot%202026-07-09%20195928.png)
+![Project Screenshot](src/screenshot/Screenshot%202026-07-09%20195947.png)
+![Project Screenshot](src/screenshot/Screenshot%202026-07-09%20200006.png)
 
-Run the development server:
+## How to Run Locally
+1. Clone the repo
 
-```bash
-npm run dev
-```
+  ```bash
+  git clone https://github.com/Towsif111/Assignment-8.git
+  ```
 
-Open http://localhost:3000 in your browser.
+2. Navigate to the project folder
 
-## Environment Variables
+  ```bash
+  cd Assignment-8
+  ```
 
-Create a `.env.local` file in the project root:
+3. Install dependencies
 
-```bash
-MONGO_URI=your_mongodb_connection_string
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-NEXT_PUBLIC_BETTER_AUTH_URL=http://localhost:3000
-```
+  ```bash
+  npm install
+  ```
 
-## Scripts
+4. Start the development server
 
-- `npm run dev` - start development server
-- `npm run build` - build for production
-- `npm run start` - start production server
-- `npm run lint` - run ESLint
+  ```bash
+  npm run dev
+  ```
+
+5. Open the app
+
+  Visit http://localhost:3000 in your browser.
 
 ## Project Structure
-
-```
+```text
 src/
-	app/               # App Router pages and layouts
-	components/        # Shared UI components
-	lib/               # Auth client and server configuration
+  app/
+  components/
+  lib/
 public/
-	data/tiles.json    # Tile catalog data
+  data/
 ```
 
-## Authentication Notes
-
-- Google OAuth must be configured in your Google Cloud project.
-- Ensure the callback URL matches your Better Auth setup.
-- Update `NEXT_PUBLIC_BETTER_AUTH_URL` for production.
+## Notes
+- Add your deployed URL to the Live Demo section.
+- Replace `screenshot.png` with an actual image file if you want the preview to render in GitHub.
 
 
