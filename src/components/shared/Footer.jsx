@@ -21,7 +21,7 @@ export default function Footer() {
     <footer className="mt-auto border-t border-slate-200 bg-white px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
         <div>
-          <h2 className="text-lg font-semibold text-slate-900">TileScape</h2>
+          <h2 className="text-lg font-semibold text-slate-900">TilesGallery</h2>
           <p className="mt-3 max-w-sm text-sm leading-6 text-slate-600">
             Discover premium tiles, curated finishes, and inspiration for every space.
           </p>
@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-10 max-w-6xl border-t border-slate-200 pt-5 text-center text-xs text-slate-500">
-        © 2026 TileScape. All rights reserved.
+        © 2026 TilesGallery. All rights reserved.
       </div>
     </footer>
   );
