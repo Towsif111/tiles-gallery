@@ -34,8 +34,8 @@ TilesGallery is a modern Next.js gallery app for browsing curated tiles, viewing
 
 ## Screenshot
 ![Project Screenshot](src/screenshot/Screenshot%202026-07-09%20195928.png)
-![Project Screenshot](src/screenshot/Screenshot%202026-07-09%20195947.png)
-![Project Screenshot](src/screenshot/Screenshot%202026-07-09%20200006.png)
+![Project Screenshot](src/screenshot/Screenshot%202026-10-18%20All%20Tiles.png)
+![Project Screenshot](src/screenshot/Screenshot%202026-07-09%20200060.png)
 
 ## How to Run Locally
 1. Clone the repo
@@ -79,4 +79,3 @@ public/
 ## Notes
 - Add your deployed URL to the Live Demo section.
 - Replace `screenshot.png` with an actual image file if you want the preview to render in GitHub.
-
