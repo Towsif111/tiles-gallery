@@ -41,13 +41,13 @@ TilesGallery is a modern Next.js gallery app for browsing curated tiles, viewing
 1. Clone the repo
 
   ```bash
-  git clone https://github.com/Towsif111/tiles-gallery.git
+  git clone https://github.com/Towsif111/Assignment-8.git
   ```
 
 2. Navigate to the project folder
 
   ```bash
-  cd tiles-gallery
+  cd Assignment-8
   ```
 
 3. Install dependencies
