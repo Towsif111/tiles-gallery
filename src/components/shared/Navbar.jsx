@@ -23,7 +23,7 @@ const Navbar = () => {
 		<header className="w-full border-b border-slate-200 bg-white px-4 sm:px-6 lg:px-8">
 			<div className="grid h-19 w-full grid-cols-[auto_1fr_auto] items-center gap-4">
 				<div className="flex items-center">
-					<Link href="/" aria-label="TileScape home" className="text-2xl font-extrabold tracking-[-0.04em] text-red-600">
+					<Link href="/" aria-label="TilesGallery home" className="text-2xl font-extrabold tracking-[-0.04em] text-red-600">
 						<span className="text-slate-900">Tiles</span>
 						<span className="text-red-600">Gallery</span>
 					</Link>
@@ -85,4 +85,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
